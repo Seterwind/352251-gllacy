@@ -1,0 +1,27 @@
+body {
+  color: #fff;
+  font: normal 16px "Roboto", Tahoma, sans-serif;
+  background: #849d8f;
+  line-height: 1.25;
+}
+
+/* .body-slide1 {
+  background: #849d8f url(../img/index/bg1.png) center top no-repeat;
+  } */
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  h4 {
+    font-size: 21px;
+  }
+
+  .info-title {
+    color: #323232;
+  }
