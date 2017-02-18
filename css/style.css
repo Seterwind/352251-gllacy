@@ -15,6 +15,14 @@ body {
   background: #849d8f url("../img/index/bg1.png") center top no-repeat;
 }
 
+.body-slide2 {
+  background: #8996a6 url("../img/index/bg2.png") center top no-repeat;
+}
+
+.body-slide3 {
+  background: #9d8b84 url("../img/index/bg3.png") center top no-repeat;
+}
+
 h1 {
   font-size: 35px;
   line-height: 41px;
@@ -23,10 +31,6 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: bold;
-}
-
-h3 {
-  font-size: 43px;
 }
 
 h4 {
@@ -47,7 +51,7 @@ h4 {
 }
 
 .block {
-  padding: 20px 13px;
+  padding: 0px 13px;
   box-sizing: inherit;
   float: left;
   width: 100%;
@@ -83,6 +87,7 @@ h4 {
 
 .main-header {
   color: #ffffff;
+  padding-top: 10px;
 }
 
 .logo {
@@ -103,7 +108,7 @@ h4 {
 
 .main-navigation li {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .main-menu > li {
@@ -113,11 +118,16 @@ h4 {
 
 .main-menu > li > a {
   display: block;
-  padding: 8px 14px;
+  padding: 8px 12px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #fff;
+  text-decoration: none;
+}
+
+.main-menu > li > a span {
+  font-weight: bold;
 }
 
 /*.main-menu .drop-menu {
@@ -177,11 +187,11 @@ h4 {
 
 .contact-block {
   float: right;
+  text-align: right;
 }
 
 .contact-block span {
   display: block;
-  text-align: right;
 }
 
 .address {
@@ -190,26 +200,52 @@ h4 {
   line-height: 24px;
 }
 
-.slideshow {
-  padding-top: 450px;
+.slide {
   text-align: center;
-  position: relative;
 }
 
 .slide-name {
+  display: block;
   font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  width: 62%;
   text-shadow: 1px 1px 3px #b6ccc1;
+  max-width: 700px;
+  margin: 282px 0 0 226px;
+  line-height: 1;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #ec593c;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border-radius: 32px;
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.375;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.slide-btn {
+  font-size: 32px;
+  padding: 9px 42px;
+  margin: 32px 0 42px;
+}
+
+.promo-name {
+  font-size: 35px;
+  line-height: 1;
+  margin: 0 0 10px 0;
 }
 
 .promo {
   margin-bottom: 40px;
-  padding: 20px 17px 23px 20px;
+  padding: 20px 17px 25px 20px;
   border-radius: 12px;
-  height: 220px;
 }
 
 .promo-strawberry {
@@ -223,58 +259,127 @@ h4 {
 }
 
 .promo-text {
-  margin-top: 17px;
-  margin-bottom: 44px;
+  font-weight: bold;
+  padding-top: 10px;
+  height: 96px;
+  overflow: hidden;
+  line-height: 1.2;
+  font-size: 18px;
 }
 .promo > .button {
-  position: absolute;
-  right: 20px;
-  bottom: 23px;
+  display: block;
+  float: right;
+  right: 35px;
+  bottom: 13px;
+  font-family: "Roboto";
+  font-weight: bold;
+  line-height: 1.333;
 }
 
 .icecream {
   display: block;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   position: relative;
+  text-decoration: none;
 }
 
 .icecream-text {
   height: 2.5rem;
 }
 
+.icecream-text span {
+  font-weight: 500;
+}
+
+.underline {
+  color: #fff;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+}
+
 .icecream-background img {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   border-radius: 50%;
 }
 
 .price {
   position: absolute;
-  top: 58%;
+  top: 200px;
   left: 0;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 45px;
+  font-weight: bold;
   line-height: 60px;
   color: #ffffff;
-  text-shadow: 1px 1px 3px #313235;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.kilo {
+  font-size: 28px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .info-block {
-  background: #f0e6d2 url("../img/index/waffle.jpg") center top no-repeat;
+  background: #f0e6d2 url("../img/index/waffle.jpg") center repeat;
   border-radius: 12px;
-  padding: 21px 0;
+  margin-bottom: 40px;
 }
 
 .info-title {
-  padding: 20px 30px;
+  padding: 24px 22px;
   color: #323232;
+  font-weight: 500;
 }
 
-.info-description {
+.info-description li {
   list-style: none;
-  padding-left: 21px;
-  padding-right: 12px;
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 0px 20px 8px 77px;
+  font-weight: 400;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+.info-description li::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 22px;
+  background-image: url('../img/index/spritesheet_info.png');
+}
+
+.info-description li.ice-icon::before {
+  background-position: -63px -5px;
+  width: 49px;
+  height: 49px;
+}
+
+.info-description li.leaf-icon::before {
+  background-position: -5px -64px;
+  width: 49px;
+  height: 49px;
+}
+
+.info-description li.cow-icon::before {
+  left: 12px;
+  background-position: -5px -5px;
+  width: 48px;
+  height: 49px;
+
+}
+
+.info-description li.thermometer-icon::before {
+  left: 12px;
+  background-position: -64px -64px;
+  width: 48px;
+  height: 49px;
+
+}
+
+.info-description li:nth-child(2n) {
+  padding-left: 70px;
 }
 
 .info-text {
@@ -286,7 +391,7 @@ h4 {
 
 .news {
   background: #ffffff url("../img/index/strawberry_background.jpg") center no-repeat;
-  border-radius: 18px;
+  border-radius: 20px;
 }
 
 .news-title {
@@ -298,52 +403,53 @@ h4 {
 
 .news-link {
   display: block;
-  width: 295px;
+  width: 304px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 32px;
   color: #323232;
   padding-left: 21px;
-  padding-bottom: 82px;
+  padding-bottom: 75px;
+  font-weight: bold;
 }
 
 .mail-block {
-  background: #f8f7f4 url("../img/index/post_background.jpg") center no-repeat;
-  border-radius: 12px;
-  padding: 5px;
-  height: 220px;
+  background: #f8f7f4 url("../img/index/post_pattern.jpg") repeat 0 0;
+  border-radius: 20px;
+  padding: 6px;
+  font-weight: 400;
 }
 
 .mail-content {
   background-color: #f8f7f4;
-  border-radius: 12px;
-  padding: 33px 20px;
+  border-radius: 15px;
+  padding: 27px 20px;
+  min-height: 208px;
 }
 
 .mail-text {
+  margin: 0 0 37px;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
-  padding: 19px 20px;
+  max-height: 80px;
+  overflow: hidden;
 }
 
 .mail-content form {
- position: relative;
- padding-right: 140px;
  vertical-align: bottom;
 }
 
 .mail-content button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 8px 19px 11px 19px;
+  float: right;
+  padding: 10px 19px 10px 19px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .mail-content input[type="email"] {
-  box-sizing: border-box;
-  width: 100%;
-  height: 42px;
-  padding-left: 14px;
+  float: left;
+  width: 365px;
+  padding: 13px 13px;
   border: 1px solid #f3f3f2;
   border-radius: 5px;
 }
@@ -383,6 +489,7 @@ h4 {
 
 .contacts-btn {
   width: 100%;
+  margin-top: 24px;
 }
 
 .main-footer {
@@ -457,6 +564,11 @@ h4 {
 }
 
 /*Стили каталога*/
+
+.breadcrumbs {
+  margin-top: -20px;
+  font-size: 0.85rem;
+}
 
 .page-container {
   float: right;

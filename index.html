@@ -9,17 +9,18 @@
   <title>HTML Academy: Глейси</title>
 </head>
 
-<body class="body-slide1">
-  <header class="main-header container">
-    <div class="block block-75">
-      <div class="logo">
-        <a><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
-      </div>
-      <!-- Навигация -->
-      <nav class="main-navigation">
-        <ul class="main-menu">
-          <li>
-            <a href="#">Каталог</a>
+<body>
+  <div class="body-wrapper body-slide1">
+    <header class="main-header container">
+      <div class="block block-75">
+        <div class="logo">
+          <a><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
+        </div>
+        <!-- Навигация -->
+        <nav class="main-navigation">
+          <ul class="main-menu">
+            <li>
+              <a href="#"><span class="underline">Каталог</span></a>
             <!-- Выпадающее меню
             <ul class="drop-menu">
               <li><a class="default-link" href="#">Новинки</a></li>
@@ -30,10 +31,10 @@
             </ul>-->
           </li>
           <li>
-            <a href="#">Доставка и оплата</a>
+            <a href="#"><span class="underline">Доставка и оплата</span></a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#"><span class="underline">О компании</span></a>
           </li>
         </ul>
       </nav>
@@ -76,11 +77,10 @@
   </div>
 </div>
 </div>
-<div class="contact-block">
+</div>
+<div class="block block-25 contact-block">
   <span class="contacts">(с 10 до 20 ежедневно)</span>
   <a class="address" href="tel:+88124502525">8 812 450-25-25</a>
-</div>
-</div>
 </div>
 </header>
 <main class="container">
@@ -122,7 +122,7 @@
    <!-- </div> -->
  </div>
  <div class="block block-50">
-  <div class="promo promo-strawberry">
+  <div class="promo promo-strawberry clearfix">
     <h3 class="promo-name">Малинка даром!</h3>
     <!-- <img class="promo-background" src="#" width="" height="" alt=""> -->
     <p class="promo-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -130,7 +130,7 @@
   </div>
 </div>
 <div class="block block-50">
-  <div class="promo promo-choco">
+  <div class="promo promo-choco clearfix">
     <h3 class="promo-name">Шоколадки даром!</h3>
     <!-- <img class="promo-background" src="#" width="" height="" alt=""> -->
     <p class="promo-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -141,53 +141,53 @@
   <a class="icecream icecream-hit" href="#">
     <div class="icecream-background">
       <img src="img/catalog/icecream1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
-      <p class="icecream-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+      <p class="icecream-text"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
     </div>
-    <div class="price">310&#8381;/кг</div>
+    <div class="price">310&#8381;<span class="kilo">/кг</span></div>
   </a>
 </div>
 <div class="block block-25">
   <a class="icecream icecream-hit" href="#">
     <div class="icecream-background">
       <img src="img/catalog/icecream2.png" width="267" height="267" alt="Сливочно-кофейное">
-      <p class="icecream-text">Сливочно-кофейное с кусочками шоколада</p>
+      <p class="icecream-text"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></p>
     </div>
-    <div class="price">380&#8381;/кг</div>
+    <div class="price">380&#8381;<span class="kilo">/кг</span></div>
   </a>
 </div>
 <div class="block block-25">
   <a class="icecream icecream-hit" href="#">
     <div class="icecream-background">
       <img src="img/catalog/icecream3.png" width="267" height="267" alt="Сливочно-клубничное">
-      <p class="icecream-text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+      <p class="icecream-text"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></p>
     </div>
-    <div class="price">355&#8381;/кг</div>
+    <div class="price">355&#8381;<span class="kilo">/кг</span></div>
   </a>
 </div>
 <div class="block block-25">
   <a class="icecream icecream-hit" href="#">
     <div class="icecream-background">
       <img src="img/catalog/icecream4.png" width="267" height="267" alt="Сливочное крем-брюле">
-      <p class="icecream-text">Сливочное крем-брюле с карамельной подливкой</p>
+      <p class="icecream-text"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></p>
     </div>
-    <div class="price">415&#8381;/кг</div>
+    <div class="price">415&#8381;<span class="kilo">/кг</span></div>
   </a>
 </div>
 <div class="block block-100">
   <div class="info-block clearfix">
     <h2 class="info-title">Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
     <ul class="info-description">
-      <li class="ice-icon1 info-text">
-        <!-- Иконка -->Все наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
+    <li class="ice-icon info-text">
+        Все наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
       </li>
-      <li class="ice-icon2 info-text">
-        <!-- Иконка -->Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+      <li class="cow-icon info-text">
+        Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
       </li>
-      <li class="ice-icon3 info-text">
-        <!-- Иконка -->Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального экологически чистого сырья.
+      <li class="leaf-icon info-text">
+        Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального экологически чистого сырья.
       </li>
-      <li class="ice-icon4 info-text">
-        <!-- Иконка -->Доставка нашего мороженого заказчикам осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+      <li class="thermometer-icon info-text">
+        Доставка нашего мороженого заказчикам осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
       </li>
     </ul>
   </div>
@@ -200,13 +200,13 @@
 </div>
 <div class="block block-50">
   <div class="mail-block">
-    <div class="mail-content">
+    <div class="mail-content clearfix">
       <p class="mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякую ненужную ерунду. Честно =)</p>
       <form action="#" method="post">
         <label>
           <input type="email" name="email" placeholder="Электронная почта">
         </label>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button">Отправить</button>
       </form>
     </div>
   </div>
@@ -224,7 +224,7 @@
         <span class="contacts">Для заказов по телефону:</span>
         <a class="address" href="tel:+88124502525">8 812 450-25-25</a>
         <span class="contacts">(с 10 до 20 ежедневно)</span>
-        <button class="contacts-btn" type="button">Форма обратной связи</button>
+        <button class="button contacts-btn" type="button">Форма обратной связи</button>
             <!-- Попап форма обратной связи
    <div class="contacts-popup">
     <div class="contacts-popup-form">
@@ -268,7 +268,7 @@
     <div class="footer-info">
       <!-- Иконка сердце -->
       <ul class="footer-link">
-        <li class="footer-info-link"><a href="#">Для поставщиков</a></li>
+        <li class="footer-info-link" class="heart-icon"><a href="#">Для поставщиков</a></li>
         <li class="footer-info-link"><a href="#">О производстве</a></li>
         <li class="footer-info-link"><a href="#">Наши документы</a></li>
         <li class="footer-info-link"><a href="#">Экологические стандарты</a></li>
@@ -283,5 +283,6 @@
     </div>
   </div>
 </footer>
+</div>
 </body>
 </html>
