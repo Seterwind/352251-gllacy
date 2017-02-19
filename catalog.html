@@ -11,16 +11,17 @@
 
 <body>
 	<!-- Шапка сайта -->
-	<header class="main-header container">
-    <div class="block block-75">
-      <div class="logo">
-        <a><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
-      </div>
-      <!-- Навигация -->
-      <nav class="main-navigation">
-        <ul class="main-menu">
-          <li>
-            <a href="#">Каталог</a>
+<header class="main-header container">
+<section class="userbar">
+      <div class="block block-75">
+          <div class="logo">
+            <a href="/index.html"><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
+          </div>
+          <!-- Навигация -->
+          <nav class="main-navigation">
+            <ul class="main-menu">
+              <li>
+                <a href="#"><span class="underline">Каталог</span></a>
             <!-- Выпадающее меню
             <ul class="drop-menu">
               <li><a class="default-link" href="#">Новинки</a></li>
@@ -31,28 +32,32 @@
             </ul>-->
           </li>
           <li>
-            <a href="#">Доставка и оплата</a>
+            <a href="#"><span class="underline">Доставка и оплата</span></a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#"><span class="underline">О Компании</span></a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="block block-25">
       <!-- Блок пользователя -->
-      <div class="user-block">
-        <!-- Поиск-->
+      <div class="user-block clearfix">
         <div class="search">
-          <form action="#" method="get">
-            <label for="search">Поиск
-              <input type="search" id="search" name="search" placeholder="Что ищем?">
-            </label>
-          </form>
+          <a class="search-link" href="#"></a>
+          <div class="search-form">
+            <form action="#" method="get">
+              <label for="search">
+                <input type="search" id="search" name="search" placeholder="Что ищем?">
+              </label>
+            </form>
+          </div>
         </div>
-        <!-- Вход-->
+
         <div class="login">
-          <button class="btn-login" type="button"><img src="#" alt="">Вход</button>
+          <a class="login-link" href="#">Вход</a>
+          <div class="login-form">
+            <button class="btn-login" type="button"></button>
                     <!-- Попап вход
    <form action="#" method="post">
     <label for="email">Электронная почта
@@ -64,34 +69,35 @@
     <label for="submit">
       <button class="button" type="submit" id="submit" name="submit">Войти</button>
     </label>
+    <div class="login-forgot">
     <a class="login-link" href="#">Забыли пароль?</a>
     <a class="login-link" href="#">Новая регистрация</a>
-  </form> -->
 </div>
-<!-- Корзина -->
+</form> -->
+</div>
+</div>
+
 <div class="basket">
-  <a href="#">Корзина</a>
-  <div class="basket-content">
-    <!-- Иконка корзина --><span class="basket-empty">Пусто</span>
-    <!-- Состояние корзины <span class="basket-full">2 товара</span> -->
-  </div>
+  <a class="basket-link" href="#">Пусто</a>
 </div>
 </div>
 </div>
+</section>
+<section class="schedule">
 <div class="block block-75 breadcrumbs"><a href="/index.html">Главная</a>
       <a href="#">Каталог</a>
       <a>Сливочное</a>
 </div>
 <div class="block block-25 contact-block">
-  <span class="contacts">(с 10 до 20 ежедневно)</span>
+  <span class="contacts">С 10 до 20, ежедневно</span>
   <a class="address" href="tel:+88124502525">8 812 450-25-25</a>
 </div>
-</div>
+</section>
 </header>
 
   </div>
   <main class="container">
-  <!-- Фильтры -->
+  <section class="filters">
   <div class="block block-100">
     <h1 class="cream">Сливочное мороженое</h1>
     <div class="filter-container">
@@ -139,7 +145,9 @@
 </form>
 </div>
 </div>
-<!-- Мороженко -->
+</section>
+
+<section class="catalog">
 <div class="block block-25">
   <a class="icecream icecream-hit" href="#">
     <div class="icecream-background">
@@ -271,7 +279,8 @@
   </a>
   <!-- <button class="button view-btn" href="#">Быстрый просмотр</button> -->
 </div>
-<!-- Листалка страниц -->
+</section>
+<section class="paginator">
 <div class="block block-100">
   <div class="page-container">
    <a class="nav-link page-back" href="#"></a>
@@ -283,9 +292,10 @@
    <a class="nav-link page-fwd" href="#"></a>
  </div>
 </div>
+</section>
 </main>
-<!-- Футер -->
 <footer class="main-footer container">
+<section class="social">
   <div class="block block-25">
     <div class="footer-social">
       <a class="social-btn social-btn-twi" href="#">Твиттер</a>
@@ -294,23 +304,26 @@
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
     </div>
   </div>
+  </section>
+  <section class="docs">
   <div class="block block-50">
     <div class="footer-info">
-      <!-- Иконка сердце -->
       <ul class="footer-link">
-        <li class="footer-info-link"><a href="#">Для поставщиков</a></li>
-        <li class="footer-info-link"><a href="#">О производстве</a></li>
+        <li class="footer-info-link"><a class="heart-icon" href="#">Для поставщиков</a></li>
         <li class="footer-info-link"><a href="#">Наши документы</a></li>
+        <li class="footer-info-link"><a href="#">О производстве</a></li>
         <li class="footer-info-link"><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
   </div>
+  </section>
+  <section class="copyright-info">
   <div class="block block-25">
     <div class="footer-copyright">
-      <!-- Иконка лого -->
-      <div class="footer-logo">HTML Academy</div>
+      <a class="footer-logo" href="https://htmlacademy.ru"><img src="./img/academy_logo.png" width="108" height="38" alt="Логотип HTML Academy"></a>
       <span class="copyright">Сделано в HTML Academy &#169; 2017</span>
     </div>
+    </section>
   </div>
 </footer>
 </body>

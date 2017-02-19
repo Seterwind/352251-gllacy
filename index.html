@@ -12,15 +12,16 @@
 <body>
   <div class="body-wrapper body-slide1">
     <header class="main-header container">
+      <section class="userbar">
       <div class="block block-75">
-        <div class="logo">
-          <a><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
-        </div>
-        <!-- Навигация -->
-        <nav class="main-navigation">
-          <ul class="main-menu">
-            <li>
-              <a href="#"><span class="underline">Каталог</span></a>
+          <div class="logo">
+            <a><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
+          </div>
+          <!-- Навигация -->
+          <nav class="main-navigation">
+            <ul class="main-menu">
+              <li>
+                <a href="#"><span class="underline">Каталог</span></a>
             <!-- Выпадающее меню
             <ul class="drop-menu">
               <li><a class="default-link" href="#">Новинки</a></li>
@@ -34,25 +35,29 @@
             <a href="#"><span class="underline">Доставка и оплата</span></a>
           </li>
           <li>
-            <a href="#"><span class="underline">О компании</span></a>
+            <a href="#"><span class="underline">О Компании</span></a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="block block-25">
       <!-- Блок пользователя -->
-      <div class="user-block">
-        <!-- Поиск-->
+      <div class="user-block clearfix">
         <div class="search">
-          <form action="#" method="get">
-            <label for="search">Поиск
-              <input type="search" id="search" name="search" placeholder="Что ищем?">
-            </label>
-          </form>
+          <a class="search-link" href="#"></a>
+          <div class="search-form">
+            <form action="#" method="get">
+              <label for="search">
+                <input type="search" id="search" name="search" placeholder="Что ищем?">
+              </label>
+            </form>
+          </div>
         </div>
-        <!-- Вход-->
+
         <div class="login">
-          <button class="btn-login" type="button"><img src="#" alt="">Вход</button>
+          <a class="login-link" href="#">Вход</a>
+          <div class="login-form">
+            <button class="btn-login" type="button"></button>
                     <!-- Попап вход
    <form action="#" method="post">
     <label for="email">Электронная почта
@@ -64,26 +69,29 @@
     <label for="submit">
       <button class="button" type="submit" id="submit" name="submit">Войти</button>
     </label>
+    <div class="login-forgot">
     <a class="login-link" href="#">Забыли пароль?</a>
     <a class="login-link" href="#">Новая регистрация</a>
-  </form> -->
 </div>
-<!-- Корзина -->
+</form> -->
+</div>
+</div>
+
 <div class="basket">
-  <a href="#">Корзина</a>
-  <div class="basket-content">
-    <!-- Иконка корзина --><span class="basket-empty">Пусто</span>
-    <!-- Состояние корзины <span class="basket-full">2 товара</span> -->
-  </div>
+  <a class="basket-link" href="#">Пусто</a>
 </div>
 </div>
 </div>
+</section>
+<section class="schedule">
 <div class="block block-25 contact-block">
-  <span class="contacts">(с 10 до 20 ежедневно)</span>
+  <span class="contacts">С 10 до 20, ежедневно</span>
   <a class="address" href="tel:+88124502525">8 812 450-25-25</a>
 </div>
+</section>
 </header>
 <main class="container">
+<section class="slideshow">
   <div class="block block-100">
     <!-- Слайдер -->
     <!-- <div class="slideshow-container"> -->
@@ -121,6 +129,8 @@
    </div>
    <!-- </div> -->
  </div>
+ </section>
+ <section class="promoions">
  <div class="block block-50">
   <div class="promo promo-strawberry clearfix">
     <h3 class="promo-name">Малинка даром!</h3>
@@ -137,6 +147,8 @@
     <a class="button" href="/catalog/plombir">Хочу шоколадки!</a>
   </div>
 </div>
+</section>
+<section class="bestseller">
 <div class="block block-25">
   <a class="icecream icecream-hit" href="#">
     <div class="icecream-background">
@@ -173,11 +185,13 @@
     <div class="price">415&#8381;<span class="kilo">/кг</span></div>
   </a>
 </div>
+</section>
+<section class="about-us">
 <div class="block block-100">
   <div class="info-block clearfix">
     <h2 class="info-title">Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
     <ul class="info-description">
-    <li class="ice-icon info-text">
+      <li class="ice-icon info-text">
         Все наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
       </li>
       <li class="cow-icon info-text">
@@ -192,6 +206,8 @@
     </ul>
   </div>
 </div>
+</section>
+<section class="news-feed">
 <div class="block block-50">
   <div class="news">
     <h4 class="news-title">Новое в нашем блоге</h4>
@@ -211,19 +227,19 @@
     </div>
   </div>
 </div>
+</section>
 </main>
+<section class="geo">
 <div class="map-container">
   <div class="map container">
-    <div class="cone"><img class="cone-icon" src="#" alt="Маркер"></div>
-
-    <div class="block block-33 block-right">
-      <!-- <img class="map-background" src="#" width="" height="" alt="Карта проезда"> -->
+    <!--<div class="cone"><img class="cone-icon" src="#" alt="Маркер"></div>-->
+    <div class="block">
       <div class="contacts-container">
-        <span class="contacts">Адрес главного офиса и офлайн магазина:</span>
-        <span class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+        <span class="contacts">Адрес главного офиса<br>и офлайн магазина:</span>
+        <span class="address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
         <span class="contacts">Для заказов по телефону:</span>
         <a class="address" href="tel:+88124502525">8 812 450-25-25</a>
-        <span class="contacts">(с 10 до 20 ежедневно)</span>
+        <span class="contacts time">(с 10 до 20 ежедневно)</span>
         <button class="button contacts-btn" type="button">Форма обратной связи</button>
             <!-- Попап форма обратной связи
    <div class="contacts-popup">
@@ -253,9 +269,10 @@
 </div>
 </div>
 </div>
-
 </div>
+</section>
 <footer class="main-footer container">
+<section class="social">
   <div class="block block-25">
     <div class="footer-social">
       <a class="social-btn social-btn-twi" href="#">Твиттер</a>
@@ -264,23 +281,26 @@
       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
     </div>
   </div>
+  </section>
+  <section class="docs">
   <div class="block block-50">
     <div class="footer-info">
-      <!-- Иконка сердце -->
       <ul class="footer-link">
-        <li class="footer-info-link" class="heart-icon"><a href="#">Для поставщиков</a></li>
-        <li class="footer-info-link"><a href="#">О производстве</a></li>
+        <li class="footer-info-link"><a class="heart-icon" href="#">Для поставщиков</a></li>
         <li class="footer-info-link"><a href="#">Наши документы</a></li>
+        <li class="footer-info-link"><a href="#">О производстве</a></li>
         <li class="footer-info-link"><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
   </div>
+  </section>
+  <section class="copyright-info">
   <div class="block block-25">
     <div class="footer-copyright">
-      <!-- Иконка лого -->
-      <div class="footer-logo">HTML Academy</div>
+      <a class="footer-logo" href="https://htmlacademy.ru"><img src="./img/academy_logo.png" width="108" height="38" alt="Логотип HTML Academy"></a>
       <span class="copyright">Сделано в HTML Academy &#169; 2017</span>
     </div>
+    </section>
   </div>
 </footer>
 </div>
